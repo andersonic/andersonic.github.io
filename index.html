@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jun Ru Anderson</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Animate.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    
+    <body> 
+    <div class="container-fluid">
+        
+        <div class = "row" id = "navButtons">
+            <button type = "button" class = "btn btn-primary col-xs-3" onclick = "show('profile')">     Profile</button>
+            <button type = "button" class = "btn btn-primary col-xs-3" onclick = "show('education')">   Education</button>
+            <button type = "button" class = "btn btn-primary col-xs-3" onclick = "show('projects')">    Projects</button>
+            <button type = "button" class = "btn btn-primary col-xs-3" onclick = "show('skills')">      Skills</button>
+        </div>
+        
+        
+        <div id="default" class ="section">
+           
+        </div>
+        
+        
+        <div id="profile" class = "hidden section animated">
+    
+            <h1>Hello</h1>
+            
+        </div>
+        
+
+        <div id="education" class = "hidden section animated">
+            
+            <div class="row">
+                <div class="col-md-6">            
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Formal_Logo_of_Wellesley_College%2C_Wellesley%2C_MA%2C_USA.svg">
+                    <h3>Wellesley College</h3>
+                    
+                    <p>Candidate for Bachelor of the Arts | Expected Graduation: May 2021 | GPA: None yet</p>
+                    
+                    <h5>Noteworthy Classes</h5>
+                    <ul>
+                        <li>Foundations of Computer Systems</li>
+                        <li>Multivariable Calculus</li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Menlo_School_logo.png" alt="Menlo School">
+                    <h3>Menlo School</h3>
+                    
+                    <p>High School | Graduated: June 2017 | Unweighted GPA: 4.00</p>
+                    
+                    <h5>Noteworthy Classes</h5>
+                    <ul>
+                        <li>AP Computer Science</li>
+                        <li>AP Calculus BC</li>
+                    </ul>
+                    <h5>Awards and Honors</h5>
+                    <ul>
+                        <li>National Merit Scholar</li>
+                        <li>Presidential Scholar Candidate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="projects" class = "hidden section animated">
+            <h1 class = "text-primary">Projects</h1>
+            <ul>
+                <li>This! This website was built with HTML, CSS, and JavaScript using the Bootstrap, Animate, and 
+                    jQuery libraries. No templates here!</li>
+                <li>Vigenere Cipher (Python)
+                    <ul>
+                        <li>Gets user input for a code, a piece of text, and whether to encipher or decipher.</li>
+                        <li>Enciphers or deciphers given text using the Vigenere cipher, using the given code.</li>
+                        <li><a href = "https://c9.io/junruanderson/cipher/" target = "_blank">Link to this project</a></li>
+                        <li><a href = "https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target = "_blank">Explanation of the Vigenere cipher</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div id="skills" class = "hidden section animated">
+            <h1 class = "text-primary">Skills</h1>
+            
+            <h5>Programming Languages</h5>
+            <ul>
+                <li>HTML/CSS/jQuery</li>
+                <li>Python (Beginner)</li>
+                <li>Java</li>
+            </ul>
+            
+            
+        </div>
+    </div>
+    </body>
+</html> 
