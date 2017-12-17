@@ -13,6 +13,7 @@ img
     margin-top:5%;
 }
 
+/*
 .text-primary
 {
     color:var(--color);
@@ -23,8 +24,9 @@ a
     color:var(--color);
 }
 
-.btn-primary
+.btn
 {
     background-color: var(--color);
     border-color: black;
+    color: white;
 }

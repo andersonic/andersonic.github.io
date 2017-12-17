@@ -60,3 +60,8 @@ function show(sectionToShow)
     $("#" + sectionToShow).removeClass("hidden");
     $("#" + sectionToShow).addClass(selectEntrance());
 }
+
+function darken(button)
+{
+
+}
