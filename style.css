@@ -1,9 +1,30 @@
+:root
+{
+    --color: mediumseagreen;
+}
+
 .hidden
 {
     visibility:hidden;
 }
 
-#navButtons
+img
 {
-    margin-bottom: 3%;
+    margin-top:5%;
+}
+
+.text-primary
+{
+    color:var(--color);
+}
+
+a
+{
+    color:var(--color);
+}
+
+.btn-primary
+{
+    background-color: var(--color);
+    border-color: black;
 }
