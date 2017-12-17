@@ -63,7 +63,7 @@ function show(sectionToShow)
 
 function removeDefault()
 {
-    $("#default").addClass("bounceOutLeft");
+    $("#default").addClass("slideOutLeft");
     $("#default").addClass("hidden");
     $("#profile").removeClass("hidden");
     $("#profile").addClass(selectEntrance());
