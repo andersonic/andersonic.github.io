@@ -61,7 +61,10 @@ function show(sectionToShow)
     $("#" + sectionToShow).addClass(selectEntrance());
 }
 
-function darken(button)
+function removeDefault()
 {
-
+    $("#default").addClass("bounceOutLeft");
+    $("#default").addClass("hidden");
+    $("#profile").removeClass("hidden");
+    $("#profile").addClass(selectEntrance());
 }

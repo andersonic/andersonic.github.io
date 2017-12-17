@@ -10,6 +10,8 @@
 </head>
 <body>
 
+
+
 <div class="container-fluid">
     <div class = "row" class = "navButtons">
         <button type="button" class="btn btn-primary col-xs-3" onclick="show('profile')">     Profile</button>
@@ -17,22 +19,27 @@
         <button type="button" class="btn btn-primary col-xs-3" onclick="show('projects')">    Projects</button>
         <button type="button" class="btn btn-primary col-xs-3" onclick="show('skills')">      Skills</button>
     </div>
+</div>
 
-    <div id="default" class ="section">
-        <h1 class="text-primary">Hello, and nice to meet you!</h1>
-        <p class="text-primary">
-            My name is Jun Ru Anderson, and I'm a first-year at Wellesley college, where I intend to major in math and
-            computer science.
-        </p>
-           
-    </div>
-        
+<div id="default" class="section animated">
+    <h1 class="text-primary">Hello, and nice to meet you!</h1>
+</div>
+
+<script>
+    window.setTimeout(removeDefault, 1000);
+</script>
+
+<div class="container-fluid">
         
     <div id="profile" class = "hidden section animated">
     
         <h1>Jun Ru Anderson</h1>
 
-        <h2 class="text-primary">Say something here</h2>
+        <p>
+            My name is Jun Ru Anderson, and I'm a first-year at Wellesley college, where I intend to major in math and
+            computer science.
+        </p>
+
         <ul>
             <li><a href="https://linkedin.com/in/junruanderson" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/andersonic" target="_blank">GitHub</a></li>
@@ -100,23 +107,36 @@
                     </li>
                     <li>Vigenere Cipher (Java)
                         <ul>
-                            <li>Gets user input for a code, a piece of text, and whether to encipher or decipher.</li>
-                            <li>Enciphers or deciphers given text using the Vigenere cipher, using the given code.</li>
-                            <li><a href = "https://github.com/andersonic/vigenere-cipher" target = "_blank">Link to repository</a></li>
-                            <li><a href="/documents/cipher.jar">Download runnable JAR</a></li>
-                            <li><a href ="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target = "_blank">
-                                Explanation of the Vigenere cipher
-                            </a>
+                            <li>
+                                Description: Gets user input for a code, a piece of text, and whether to encipher or
+                                decipher. Enciphers or deciphers given text using the Vigenere cipher, using the given
+                                code.
+                            </li>
+                            <li>Links:
+                                <ul>
+                                    <li><a href = "https://github.com/andersonic/vigenere-cipher" target = "_blank">Link to repository</a></li>
+                                    <li><a href="/documents/cipher.jar">Download runnable JAR</a></li>
+                                    <li><a href ="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target = "_blank">
+                                        Explanation of the Vigenere cipher
+                                    </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
                     <li>AppManager (PHP)
                         <ul>
-                            <li>Manages database of internship and scholarship applications.</li>
-                            <li>Allows user to search database and favorite opportuntites</li>
-                            <li>Allows user to record the status of their applications.</li>
-                            <li>Link to repository: (Will come when I have wifi again)</li>
-                            <li>Link to project: (Will come when I get around to deploying)</li>
+                            <li>
+                                Description: Manages database of internship and scholarship applications. Allows user to
+                                search database and favorite opportuntites, and keep track of the status of their open
+                                applications.
+                            </li>
+                            <li>Links:
+                                <ul>
+                                    <li><a href="https://github.com/andersonic/appmanager" target="_blank">Link to repository</a></li>
+                                    <li>Link to project: (Will come when I get around to deploying)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -126,32 +146,37 @@
                 <ul>
                     <li>CheckIn (Python)
                         <ul>
-                            <li>Hack UMass V project</li>
-                            <li><a href="https://github.com/andersonic/CheckIn-HackUMassV" target = "_blank">Link to repository</a></li>
                             <li>
-                                Check in with people with degenerative brain disease and alert a contact if the
-                                person misses the check in.
+                                Description: Project for HackUMassV. Checks in with people with degenerative brain
+                                disease and alert a contact if the person misses the check in.
                             </li>
                             <li>Won Best Hardware Hack</li>
+                            <li><a href="https://github.com/andersonic/CheckIn-HackUMassV" target = "_blank">Link to repository</a></li>
                         </ul>
                     </li>
                     <li>Froodies
                         <ul>
-                            <li>WhackFall2017 project</li>
-                            <li><a href="https://froodie.herokuapp.com/" target="_blank">Link to project</a></li>
-                            <li><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">Link to repository</a></li>
                             <li>
-                                A way to alert people to would-be wasted food in their vicinity, with the goal of
-                                decreasing both food waste and hunger.
+                                Description: Project for WhackFall2017. A way to alert people to would-be wasted food in
+                                their vicinity, with the goal of decreasing both food waste and hunger. Deployed with
+                                Heroku.
                             </li>
                             <li>Won Best Food-Related Hack</li>
+                            <li>Links:
+                                <ul>
+                                    <li><a href="https://froodie.herokuapp.com/" target="_blank">Link to project</a></li>
+                                    <li><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">Link to repository</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>Tower Defense (Java)
                         <ul>
-                            <li>AP Computer Science final project</li>
-                            <li>Worked with one peer to complete</li>
-                            <li>Link to runnable JAR</li>
+                            <li>
+                                Description: AP Computer Science final project. Tower defense game that uses a text file
+                                to set the map and basic rules to dictate the "invaders" movements and targets.
+                            </li>
+                            <li><a href="/documents/Game.jar">Downlaod runnable JAR</a></li>
                         </ul>
                     </li>
                 </ul>
