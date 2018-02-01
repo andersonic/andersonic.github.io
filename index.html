@@ -21,9 +21,7 @@
 		<div class="animated" id="bottom">
 			<div class="border-line" id="border-line-bottom">
 		</div>		
-	</div>
-	
-		
+	</div>		
 	<div id="main" class="animated" hidden>
 		<div class="section">
 			<div id="profile">
@@ -129,7 +127,7 @@
 			<h1 class="sectionheader" style="z-index:2">Education</h1>
 			<div class="school" id="wellesley">
 				<div class="well" onmouseover="$('#wellesleytext').show()" onmouseout="$('#wellesleytext').hide()" onclick="show('wellesleyinfo')">
-					<img src="images/wellesley.jpg" alt="Wellesley College" height=100% width=100%>
+					<img src="images/wellesley.jpg" alt="Wellesley College" width=100% height=100%>
 					<div class="project-text" id="wellesleytext" hidden>
 						<div class="inner-project-text">
 							<h2>Wellesley College</h2>
@@ -140,7 +138,7 @@
 			</div>
 			<div class="school" id="menlo">
 				<div class="well" onmouseover="$('#menlotext').show()" onmouseout="$('#menlotext').hide()" onclick="show('menloinfo')">
-					<img src="images/menlo.jpg" alt="Menlo School" height=100% width=100%>
+					<img src="images/menlo.jpg" alt="Menlo School" width=100% height=100%>
 					<div class="project-text" id="menlotext" hidden>
 						<div class="inner-project-text">
 							<h2>Menlo School</h2>
@@ -148,6 +146,78 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-holder">
+		<div class="page schoolpage animated" id="menloinfo" onmouseover="show_slider()" hidden>
+			<div class="slider" onclick="hide('menloinfo')" hidden>
+				<img src="images/right-arrow.png" alt="arrow" class="arrow">
+			</div>
+			<div class="banner image" style="background-image:url('images/stenthall.jpg')">
+			</div>
+			<div class="center">
+				<div class="center-contents">
+					<h1 class="heading">Menlo School</h1>
+					<ul><li>High School | Graduated: June 2017 | Weighted GPA: 4.125 | Unweighted GPA: 4.00 | <a href="documents/anderson_hstranscript.pdf" target="_blank">Transcript</a></li></ul>
+					<h2 class="heading">Relevant Classes</h2>
+					<ul>
+						<li>AP Computer Science</li>
+						<li>AP Calculus BC</li>
+					</ul>
+					<h2 class="heading">Awards and Honors</h2>
+					<ul>
+						<li>National Merit Scholarship, 2017</li>
+						<li>Presidential Scholar Candidate, 2017</li>
+						<li>National AP Scholar, 2017</li>
+						<li>Rotary Awards(US History 2016, AP Statistics 2017)</li>
+						<li>Menlo School Achievement Awards: 
+							<br>(Physics, Chemistry, Biology, Algebra 2H, Pre-Calculus H, AP Computer Science, English 2, World Religions, World History)</li>
+					</ul>
+					<h2 class="heading">Activities</h2>
+					<ul>
+						<li>Spectrum Club--Co-President</li>
+						<li>Model U.N.</li>
+						<li>MidKnight Dancers</li>
+						<li>National Novel Writing Month</li>
+					</ul>
+				</div>
+			</div>
+			<div class="banner bottombanner image" style="background-image: url('images/12days.jpg')">
+			</div>
+		</div>
+	</div>
+	
+	<div class="page-holder">
+		<div class="page schoolpage animated" id="wellesleyinfo" onmouseover="show_slider()" hidden>
+			<div class="slider" onclick="hide('wellesleyinfo')" hidden>
+				<img src="images/right-arrow.png" alt="arrow" class="arrow">
+			</div>
+			<div class="banner image" style="background-image:url('images/tower-court.jpg')">
+			</div>
+			<div class="center">
+				<div class="center-contents">
+					<h1 class="heading">Wellesley</h1>
+					<ul><li>Candidate for Bachelor of the Arts | Expected Graduation: May 2021 | GPA: N/A | <a href="documents/anderson_transcript.pdf" target="_blank">Transcript</a></li></ul>
+					<h2 class="heading">Relevant Classes</h2>
+					<ul>
+						<li>Mathematics:
+							<ul>
+								<li>Multivariable Calculus</li>
+								<li>Cominatorics and Graph Theory</li>
+							</ul>
+						</li>						
+						<li>Computer Science:
+							<ul>
+								<li>Foundations of Computer Systems with Laboratory</li>
+								<li>Artificial Intelligence</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="banner bottombanner image" style="background-image:url('images/wellesley0.jpg')">
 			</div>
 		</div>
 	</div>
