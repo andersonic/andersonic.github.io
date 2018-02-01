@@ -2,7 +2,6 @@ body{
 	font-family: 'Helvetica Neue', serif;
 	margin:0;
 }
-
 .sectionheader, #projectheader, .subheader{
 	position:absolute;
 	top:50%;
@@ -11,98 +10,92 @@ body{
     text-align: center;
 	z-index:1;
 }
-
 #projectheader{
 	transform:translate(-50%, -100%) !important;
 }
-
-
 .section{
 	position:relative;
 	height:100vh;
 }
 
-.school{
-	position:absolute;
+#init-holder{
+	height:100vh;
 	width:100%;
-	height:50%;
 }
-#wellesley{
-	top:0;
+#top, #bottom{
+	position: absolute;
+	height:50vh;
+	width:100%;
+	background-color:lightblue;
 }
-#menlo{
+.border{
+	position:absolute;
+	height:5vw;
+	width:5%;
+	left:37.5%;
+	right:50%;
 	top:50%;
+	border-radius:50%;
+	padding:10%;
+	background-color:black;
+}
+.border-line{
+	position:absolute;
+	height:5%;
+	width:100%;
+	background-color:black;
+	top:100%;
+	transform:translateY(-100%);
+}
+#headshot{
+	position:absolute;
+	border-radius:50%;
+	left:50%;
+	top:50%;
+	bottom:50%;
+	transform:translate(-50%,-50%);
 }
 
-#education .well{
-	position:absolute;
-	top:10%;
-	left:5%;
-	height:80%;
-	width:90%;
+#top{
+	z-index:1;
 }
+#top h1{
+	display:inline-block;
+	font-size:500%;
+	text-align:center;
+}
+#firstname{
+	position:absolute;
+	top:55%;
+	right:65%;
+}
+#lastname{
+	position:absolute;
+	left:65%;
+	top:55%;
+}
+
+#bottom{
+	top:50%;
+}
+#border-line-bottom{
+	top:0 !important;
+}
+
 
 #profile{
 	position:absolute;
-	top:45%;
 	left:50%;
+	top:60%;
 	transform:translateX(-50%);
 	text-align:center;
 }
 ul{
 	list-style-type:none;
 }
-#headshot{
-	position:absolute;
-	border-radius:50%;
-	left:50%;
-	top:25%;
-	transform:translate(-50%,-50%);
-}
-
 nav{
 	text-align:center;
 }
-
-.project{
-	position:absolute;
-	width:33.3333%;
-	height:50%;
-}
-
-#project0{
-	background-image:;
-}
-#project1{
-	left:33.3333%;
-	background-image:;
-}
-#project2{
-	left:66.6667%;
-	background-image:;
-}
-#project3{
-	top:50%;
-	background-image:;
-}
-#project4{
-	top:50%;
-	left:33.3333%;
-	background-image:;
-}
-#project5{
-	top:50%;
-	left:66.6667%;
-	background-image:;
-}
-
-.hidden{
-	visibility:hidden;
-} 
-
-/*.unreadable{
-	background-color:rgba(255, 255, 255,.7);
-}*/
 
 #menloinfo{
 	background-color:navy;
@@ -136,11 +129,9 @@ nav{
 	width:100%;
 	height:15%;
 }
-
 .bottombanner{
 	top:85%;
 }
-
 .center{
 	position:absolute;
 	top:15%;
@@ -148,11 +139,9 @@ nav{
 	height:70%;
 	text-align:center;
 }
-
 #wellesleyinfo .center{
 	text-align:left;
 }
-
 .center-contents{
 	position:absolute;
 	width:100%;
@@ -171,8 +160,20 @@ nav{
 	height:100vh;
 	transform:translateY(-100%);
 }
-.hidden{
-	visibility:hidden;
+.slider{
+	background-color: rgba(0,0,0,.35);
+	position:absolute;
+	height:100%;
+	width:3%;
+	left:0%;
+}
+.arrow{
+	position:absolute;
+	z-index:3;
+	height:20%;
+	width:100%;
+	top:50%;
+	transform:translateY(-50%);
 }
 
 .image{
@@ -186,26 +187,7 @@ a{
 a:visited{
 	color:inherit;
 }
-a:hover{
-	
-}
 
-.slider{
-	background-color: rgba(0,0,0,.35);
-	position:absolute;
-	height:100%;
-	width:3%;
-	left:0%;
-}
-
-.arrow{
-	position:absolute;
-	z-index:3;
-	height:20%;
-	width:100%;
-	top:50%;
-	transform:translateY(-50%);
-}
 
 .well {
     padding: 19px;
@@ -223,9 +205,7 @@ a:hover{
 	width:80%;
 	left:5%;
 }
-#education{
-	text-align:center;
-}
+
 .project-text{
 	position:absolute;
 	top:0;
@@ -239,12 +219,44 @@ a:hover{
 .inner-project-text{
 	padding:10%;
 }
-
+.inner-project-text h2{
+	margin-top:0;
+}
+.project{
+	position:absolute;
+	width:33.3333%;
+	height:50%;
+}
 #projects a{
 	position:absolute;
 	top:0%;
 	left:50%;
 	transform:translate(-50%, -10%);
+}
+#project0{
+	background-image:;
+}
+#project1{
+	left:33.3333%;
+	background-image:;
+}
+#project2{
+	left:66.6667%;
+	background-image:;
+}
+#project3{
+	top:50%;
+	background-image:;
+}
+#project4{
+	top:50%;
+	left:33.3333%;
+	background-image:;
+}
+#project5{
+	top:50%;
+	left:66.6667%;
+	background-image:;
 }
 
 .readability-black{
@@ -271,11 +283,6 @@ a:hover{
 #skill3{
 	top:75%;
 }
-
-.inner-project-text h2{
-	margin-top:0;
-}
-
 .fit-height{
 	max-height:100%;
 	min-height:100%;
@@ -286,8 +293,30 @@ a:hover{
 #skills .sectionheader{
 	writing-mode:tb-rl;
 	text-orientation:upright;
-	left:25%;
+	left:20%;
 }
 #skills-sectionheader-right{
 	left:75% !important;
+}
+
+.school{
+	position:absolute;
+	width:100%;
+	height:50%;
+}
+#wellesley{
+	top:0;
+}
+#menlo{
+	top:50%;
+}
+#education{
+	text-align:center;
+}
+#education .well{
+	position:absolute;
+	top:10%;
+	left:5%;
+	height:80%;
+	width:90%;
 }

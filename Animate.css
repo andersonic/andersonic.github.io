@@ -20,6 +20,9 @@
 .animated.hinge {
   animation-duration: 2s;
 }
+.animated.slideOutDown{
+	animation-duration:1.5s;
+}
 
 .animated.flipOutX,
 .animated.flipOutY,
@@ -1525,7 +1528,7 @@
 
   to {
     visibility: hidden;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 110%, 0);
   }
 }
 
@@ -1569,8 +1572,7 @@
   }
 
   to {
-    visibility: hidden;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -30%, 0);
   }
 }
 
