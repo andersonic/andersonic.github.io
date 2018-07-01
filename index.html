@@ -7,220 +7,204 @@
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="script.js"></script>
 </head>
-<body>
-	<div id="init-holder">
-		<div class="animated" id="top">
-			<div class="border-line" id="border-line-top">
-			</div>
-			<div class="border animated" id="picture-border">
-				<img id="headshot" src="images/headshot.jpg" alt="headshot" height="90%" onclick="show_page()">
-			</div>
-			<h1 id="firstname">Jun&nbsp;Ru</h1>
-			<h1 id="lastname">Anderson</h1>
+<body>	
+	<div class="animated" id="top">
+		<div class="border-line" id="border-line-top">
 		</div>
-		<div class="animated" id="bottom">
-			<div class="border-line" id="border-line-bottom">
-		</div>		
-	</div>		
-	<div id="main" class="animated" hidden>
-		<div class="section">
-			<div id="profile">
-				<h3>About Me</h3>
-				<p>
-					Hello! My name is Jun Ru Anderson. I am a first-year student at Wellesley College, and I intend to double major in mathematics and computer science.
-					<br><a href="documents/resume.pdf" target="_blank">Résumé</a>
-				</p>
-				<h3>Get In Touch</h3>
-					Email: junru.anderson@gmail.com
-					<br>LinkedIn: linkedin.com/in/junruanderson
-					<br>GitHub: github.com/andersonic
+		<div class="animated" id="border">
+			<img id="headshot" src="images/headshot.jpg" alt="headshot" onclick="showPage()">
+		</div>
+		
+		<div class="animated" id="navbar" hidden>
+			<button id="b0" onclick="showSection('#about')"><span>About Me</span></button>
+			<button id="b1" onclick="showSection('#experience')"><span>Experience</span></button> 
+			<button id="b2" onclick="showSection('#projects')"><span>Projects</span></button> 
+			<button id="b3" onclick="showSection('#skills')"><span>Skills</span></button> 
+			<button id="b4" onclick="showSection('#awards')"><span>Awards</span></button> 
+			<button id="b5" onclick="showSection('#favorites')"><span>Favorites</span></button> 
+		</div>
+	</div>
+	<div class="section" id="about" hidden>
+		<h3>Hello World!</h3>
+		My name is Jun Ru Anderson. I'm a sophomore doubling majoring in math and computer science at Wellesley College. I'm a tutor for the Introduction to Computer Systems class and a research assistant in Professor Eni Mustafaraj's lab.<br><br>Outside of computer science, I love reading and writing. I've participated in NaNoWriMo three times and Camp Nanowrimo seven times. I also enjoy taking walks around Wellesley's Lake Waban.<br><br>
+		<a href="documents/resume.pdf" target="_blank">Résumé</a>
+		<h3>Get in Touch</h3>
+		Email: junru.anderson@wellesley.edu<br>
+		LinkedIn: <a href="linkedin.com/in/junruanderson">linkedin.com/in/junruanderson</a><br>
+		GitHub: <a href="github.com/andersonic">github.com/andersonic</a>
+	</div>
+	<div class="section" id="experience" hidden>
+		<div class="experience-item">
+			<b>Wellesley College Science Center</b>, Wellesley, MA <span style="float:right">June 2018-Present</span><br>
+			<i>Research Assistant</i>
+			<ul>
+				<li>Identify credibility signals from news websites that can be used to combat fake news</li>
+				<li>Use Selenium (web scraping) to automate the collection of a 455-sample dataset</li>
+				<li>Use OpenCV (computer vision), scikit-learn (machine learning), and Keras (deep learning) to create models that predict credibility of news sources with 88%-94% accuracy</li>
+			</ul>
+		</div>
+		<div class="experience-item">
+			<b>Pforzheimer Learning and Teaching Center</b>, Wellesley, MA <span style="float:right">January 2018-Present</span><br>
+			<i>Computer Science Department Tutor</i>
+			<ul>
+				<li>Answer questions on topics such as processors, caching, and dynamic memory allocation</li>
+				<li>Help students understand the stack, read disassembled code, and program in C</li>
+			</ul>
+		</div>
+		<div class="experience-item">
+			<b>Wellesley College Library and Technology Services</b>, Wellesley, MA <span style="float:right">February 2018-March 2018</span><br>
+			<i>Software Deployment Assistant</i>
+			<ul>
+				<li>Built scripts for use in deploying the school-wide Microsoft Windows 10 image</li>
+				<li>Wrote and tested flags and batch files to silently install a variety of applications</li>
+			</ul>
+		</div>
+		<div class="experience-item">
+			<b>Mathnasium of Redwood City</b>, Redwood City, CA <span style="float:right">April 2016-March 2017</span><br>
+			<i>Math Instructor</i>
+			<ul>
+				<li>Taught math lessons to groups of four students on topics ranging from number sense to calculus</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section" id="projects" hidden>
+		<div class="" id="projectnav">
+			<button id="prev-button" onclick="previousProject()"><span></span></button>
+			<button id="next-button" onclick="nextProject()"><span></span></button>	
+		</div>
+		
+		<div class="project animated" id="bds">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>Brown Datathon: DiscoveryInsights</h1>
+					<p>
+						For this project, I worked with a data set provided by DiscoveryEngine, a non-profit that allows laypeople to rate academic papers along three metrics. Datathon participants were given the opportunity to decide what direction to take; I chose to investigate potential bias in paper ratings based on the author’s perceived gender. Given the DOI of the paper and the user ratings for each metric, I used the crossref api to find the author's name, and passed it to genderize.io to guess the author's gender. With this information, I was able to separate paper's and use SciPy to perform T-tests. Happily, I found no significant difference in the ratings of papers by male, female, and indeterminate (e.x., only first initial given) authors.<br><br>Congratulations to Jong and Vaibhav, with whom I tied for first place.
+					</p>
+				</div>
+			</div>	
+		</div>
+		<div class="project animated" id="pkmn">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>CS232 Artificial Intelligence:Pokémon AI</h1>
+					<h4><a href="https://github.com/andersonic/cs232-final" target="_blank">GitHub Repository</a></h4>
+					<p>
+						This project used Python to create a competitive Pokémon-playing agent. Pokémon is a stochastic game of asymmetrical knowledge, but most interestingly, has players choose actions at the same time (as opposed to chess or checkers, in which action choice is sequential). My team implemented three battling algorithms.<br><br>I implemented the random battling, whose performance was as poor as one would expect, and the expectimax algorithm, which peaked at ELO 1309 and had a GXE (expected long-term winrate) of 54.4% after 50 battles. I was also responsible for interfacing with the battle simulator, Pokémon Showdown, using the Selenium library.<br><br>Shoutouts to my partners, Dana and Hershel.
+					</p>
+				</div>		
 			</div>
 		</div>
-		<div class="section" id="skills">
-			<h1 class="sectionheader">Programming</h1>
-			<h1 class="sectionheader" id="skills-sectionheader-right">Languages</h1>
-			<div class="skill" id="skill0">
-				<img class="fit-height" src="images/java_logo.png" alt="Java logo">
-			</div>
-			<div class="skill" id="skill1">
-				<img class="fit-height" src="images/python_logo.png" alt="Python logo">
-			</div>
-			<div class="skill" id="skill2">
-				<img class="fit-height" src="images/c_logo.png" alt="C logo">
-			</div>
-			<div class="skill" id="skill3">
-				<img class="fit-height" src="images/front_end_logo.png" alt="HTML/CSS/JS logo">
-			</div>
+		<div class="project animated" id="tower">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>AP Computer Science:Tower Defense</h1>
+					<h4><a href="https://github.com/andersonic/towerdefense" target="_blank">GitHub Repository</a></h4>
+					<p>
+						A tower defense game written with Java, and my final project for AP Computer Science. The player builds defensive units to defend the player's tower and stop an invading force.<br><br>Shoutouts to Alice for being an awesome partner for this project.
+					</p>
+				</div>					
+			</div>	
 		</div>
-	
-		<div class="section" id="projects">
-			<h1 id="projectheader">Projects</h1>
-			<a href="github.com/andersonic">See all my projects on github</a>
-			<div class="project" id="project0">
-				<div class="well" onmouseover="$('#p0text').show()" onmouseout="$('#p0text').hide()">
-					<div class="project-text" id="p0text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>Tower Defense</h2>
-							A tower defense game, and my final project for AP Computer Science. The player builds defensive units to defend the player's tower and stop an invading force. The project uses Java for the logic, as well as the JFrame library for the GUI.<br><br>Shoutouts to Alice for being an awesome partner for this project.
-						</div>
-					</div>
-					<img src='images/towerdefense.jpg' alt="Tower Defense" width=100% height=100%>
-				</div>
-			</div>
-			<div class="project" id="project1">
-				<div class="well" onmouseover="$('#p1text').show()" onmouseout="$('#p1text').hide()">
-					<div class="project-text" id="p1text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>Froodies</h2>
-							WhackFall2017 project. This webapp, built with Flask, HTML, and CSS, connects would-be wasted food with people in need. I worked almost exclusively on the back end, handling food submissions and location-based requests for food.<br><br>Shoutouts to my collaborators and fellow Wellesley women Marinn, Rachel, and Sandra.
-						</div>
-					</div>
-					<img src="images/froodies.png" alt="Froodies icon" height=100% width=100%>
-				</div>
-			</div>
-			<div class="project" id="project2">
-				<div class="well" onmouseover="$('#p2text').show()" onmouseout="$('#p2text').hide()">
-					<div class="project-text" id="p2text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>CheckIn</h2>
-							CheckIn allows the user to set automated daily check-ins with aging friends or relatives, and alerts the user if the check-in goes unanswered. CheckIn uses Python and Swift, and incorporates CMU Sphinx speech-to-text, Amazon Alexa text-to-speech, the DropBox SDK, and the JSON library for Python. This was my team's project for HackUMassV.<br><br> Shoutouts to my teammates David, Declan and Eric.
-						</div>
-					</div>
-					<img src="images/checkin.png" alt="CheckIn" height=100% width=100%>
-				</div>
-			</div>
-			<div class="project" id="project3">
-				<div class="well" onmouseover="$('#p3text').show()" onmouseout="$('#p3text').hide()">
-					<div class="project-text" id="p3text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>Web Search Parser</h2>
-							Uses Python and Selenium to make a Google search, parse the results, and return them in an array. While the returned array is definitely hard for a human to dissect, if you're a computer, it's much easier to use than the results page. The result of this program could be piped into programs that analyze the echo chamber effect, search engine marketing, and more.
-						</div>
-					</div>
-					<img src="images/websearch.png" alt="Websearch" height=100% width=100%>
-				</div>
-			</div>
-			<div class="project" id="project4">
-				<div class="well" onmouseover="$('#p4text').show()" onmouseout="$('#p4text').hide()">
-					<img src="images/imperium.jpg" alt="The Imperium Icon" height=100% width=100%>
-					<div class="project-text" id="p4text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>AD Info Guide</h2>
-						This is a (somewhat outdated) beginner's guide to the game AD2460, a free-to-play online MMO. I built this primarily to make a modular, relatively readable, and comprehensive guide for new players in my alliance. This was also my first foray into front-end web development. <br><br>My thanks to my allies donkeyrider, Legend, pipper, and Zelos for their feedback on the design and content, and to Zelos for the alliance image.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="project" id="project5">
-				<div class="well" onmouseover="$('#p5text').show()" onmouseout="$('#p5text').hide()">
-					<div class="project-text" id="p5text" style="overflow-y:scroll" hidden>
-						<div class="inner-project-text">
-							<h2>Application Manager</h2>
-							A webapp to manage applications for scholarships and internships. It uses PHP and MySQL to crowdsource data and help users find scholarships and internships that will be a good fit for them. This was my learning project for databases, and is still a work in progress. I'd like to finish implementing deletion and editing of entries in the search table.
-						</div>
-					</div>
-					<img src="images/appman.png" alt="App Manager Screenshot" height=100% width=100%>
+		<div class="project animated" id="humv">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>HackUMassV: CheckIn</h1>
+					<h4><a href="https://github.com/andersonic/CheckIn-HackUMassV" target="_blank">GitHub Repository</a></h4>
+					<p>
+						CheckIn allows the user to set automated daily check-ins with aging friends or relatives, and alerts the user if the check-in goes unanswered. CheckIn uses Python and Swift, and incorporates CMU Sphinx speech-to-text, Amazon Alexa text-to-speech, the DropBox SDK, and the JSON library for Python.<br><br>Shoutouts to my teammates David, Declan and Eric, all of whom were essential to our team's winning Best Hardware Hack.
+					</p>
 				</div>
 			</div>
 		</div>
-	
-		<div class="section" id="education">
-			<h1 class="sectionheader" style="z-index:2">Education</h1>
-			<div class="school" id="wellesley">
-				<div class="well" onmouseover="$('#wellesleytext').show()" onmouseout="$('#wellesleytext').hide()" onclick="show('wellesleyinfo')">
-					<img src="images/wellesley.jpg" alt="Wellesley College" width=100% height=100%>
-					<div class="project-text" id="wellesleytext" hidden>
-						<div class="inner-project-text">
-							<h2>Wellesley College</h2>
-							(Click!)
-						</div>
-					</div>
+		<div class="project animated" id="whack">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>WhackFall2017: Froodees</h1>
+					<h4><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">GitHub Repository</a></h4>
+					<p>
+						This webapp, built with Flask, HTML, and CSS, connects would-be wasted food with people in need. I worked almost exclusively on the back end, handling food submissions and location-based requests for food.<br><br>Shoutouts to my collaborators and fellow Wellesley women Marinn, Rachel, and Sandra.
+					</p>
 				</div>
-			</div>
-			<div class="school" id="menlo">
-				<div class="well" onmouseover="$('#menlotext').show()" onmouseout="$('#menlotext').hide()" onclick="show('menloinfo')">
-					<img src="images/menlo.jpg" alt="Menlo School" width=100% height=100%>
-					<div class="project-text" id="menlotext" hidden>
-						<div class="inner-project-text">
-							<h2>Menlo School</h2>
-							(Click!)
-						</div>
-					</div>
+			</div>	
+		</div>
+		<div class="project animated" id="cte">
+			<div class="project-contents">
+				<div class="project-text">
+					<h1>Hobby Project: Ciphered Text Editor</h1>
+					<h4><a href="https://github.com/andersonic/ciphered-text-editor" target="_blank">GitHub Repository</a></h4>
+					<p>
+						A text editor that provides support for enciphering and deciphering file contents according to a key/code. Implements a few vi-like keyboard commands. If quit through the supported keyboard command (as opposed to OS-level keyboard shortcuts such as Command-Q), contents will be enciphered before the file is saved if they are not enciphered when the user quits.<br><br>Credit and thanks to user Turk4n on Codecall for starter code related to the GUI. See tutorial here: <a href="http://forum.codecall.net/topic/49721-simple-text-editor/" target="_blank">http://forum.codecall.net/topic/49721-simple-text-editor/</a>
+					</p>
 				</div>
+				
 			</div>
 		</div>
 	</div>
-	<div class="page-holder">
-		<div class="page schoolpage animated" id="menloinfo" onmouseover="show_slider()" hidden>
-			<div class="slider" onclick="hide('menloinfo')" hidden>
-				<img src="images/right-arrow.png" alt="arrow" class="arrow">
+	<div class="section" id="skills" hidden>
+		<div class="skill" id="skills1">
+			<div class="language">
+				<h3>Java</h3>
+				<i>Classes:</i> AP Computer Science<br>
+				<i>Familiar Libraries:</i> JFrame<br>
+				<i>Projects:</i> Tower Defense, Ciphered Text Editor<br>
 			</div>
-			<div class="banner image" style="background-image:url('images/stenthall.jpg')">
-			</div>
-			<div class="center" style="overflow-y:scroll">
-				<div class="center-contents">
-					<h1 class="heading">Menlo School</h1>
-					<ul><li>High School | Graduated: June 2017 | Weighted GPA: 4.125 | Unweighted GPA: 4.00 | <a href="documents/anderson_hstranscript.pdf" target="_blank">Transcript</a></li></ul>
-					<h2 class="heading">Relevant Classes</h2>
-					<ul>
-						<li>AP Computer Science</li>
-						<li>AP Calculus BC</li>
-					</ul>
-					<h2 class="heading">Awards and Honors</h2>
-					<ul>
-						<li>National Merit Scholarship, 2017</li>
-						<li>Presidential Scholar Candidate, 2017</li>
-						<li>National AP Scholar, 2017</li>
-						<li>Rotary Awards (US History 2016, AP Statistics 2017)</li>
-						<li>Menlo School Achievement Awards: 
-							<br>(Physics, Chemistry, Biology, Algebra 2H, Pre-Calculus H, AP Computer Science, English 2, World Religions, World History)</li>
-					</ul>
-					<h2 class="heading">Activities</h2>
-					<ul>
-						<li>Spectrum Club--Co-President</li>
-						<li>Model U.N.</li>
-						<li>MidKnight Dancers</li>
-						<li>National Novel Writing Month</li>
-					</ul>
-				</div>
-			</div>
-			<div class="banner bottombanner image" style="background-image: url('images/12days.jpg')">
+			<div class="language">
+				<h3>C</h3>
+				<i>Classes:</i> CS240-Introduction to Computer Systems<br>
 			</div>
 		</div>
-	</div>
-	
-	<div class="page-holder">
-		<div class="page schoolpage animated" id="wellesleyinfo" onmouseover="show_slider()" hidden>
-			<div class="slider" onclick="hide('wellesleyinfo')" hidden>
-				<img src="images/right-arrow.png" alt="arrow" class="arrow">
-			</div>
-			<div class="banner image" style="background-image:url('images/tower-court.jpg')">
-			</div>
-			<div class="center" style="overflow-y:scroll">
-				<div class="center-contents">
-					<h1 class="heading">Wellesley</h1>
-					<ul><li>Candidate for Bachelor of the Arts | Expected Graduation: May 2021 | GPA: N/A | <a href="documents/anderson_transcript.pdf" target="_blank">Transcript</a></li></ul>
-					<h2 class="heading">Relevant Classes</h2>
-					<ul>
-						<li>Mathematics:
-							<ul>
-								<li>Multivariable Calculus</li>
-								<li>Cominatorics and Graph Theory</li>
-							</ul>
-						</li>						
-						<li>Computer Science:
-							<ul>
-								<li>Foundations of Computer Systems with Laboratory</li>
-								<li>Artificial Intelligence</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+		<div class="skill" id="skills2">
+			<div class="language">
+				<h3>Python</h3>
+				<i>Classes:</i> CS232-Artificial Intelligence<br>
+				<i>Familiar Libraries:</i> Flask, Selenium, OpenCV, scikit-learn, Keras<br>
+				<i>Projects:</i> Pokémon Playing Agent, <br>
 			</div>
 		
-			<div class="banner bottombanner image" style="background-image:url('images/wellesley0.jpg')">
+			<div class="language">
+				<h3>HTML/CSS/JavaScript</h3>
+				<i>Classes:</i> None<br>
+				<i>Projects:</i> This<br>
 			</div>
 		</div>
 	</div>
+	<div class="section" id="awards" hidden>
+		Brown Datathon - First Place (2018)<br>
+		HackUMassV - Best Hardware Hack (2017)<br>
+		National Merit Scholar (2017)<br>
+		Presidential Scholar Candidate (2017)<br>
+		National AP Scholar (2017)<br>
+	</div>
+	<div class="section" id="favorites" hidden>
+		<h2>A Few of My Favorite Things</h3>
+		<div class="favorite" id="books">
+			<h3>Books</h3>
+			<h5><i>The Martian</i></h5>
+			<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
+			<h5><i>The Prisoner in His Palace</i></h5>
+			<p></p>
+		</div>
+		<div class="favorite" id="musical">
+			<h3>Musical</h3>
+			<h5><i>Wicked</i></h5>
+		</div>
+		<div class="favorite" id="comic-books">
+			<h3>Comic Book Series</h3>
+			<h5><i>Infamous Iron Man (2016)</i></h5>
+			<p>
+				From Darth Vader to Loki to Severus Snape, redemption stories usually end in the redeemed character's death. Starting in <i>Invincible Iron Man (2015)</i> and continuing in his own series, <i>Infamous Iron Man</i>, Dr. Doom tries to become a hero--and has to live with it. Now hounded by both the authorities for having been evil and his former allies for having changed, Dr. Doom must confront suspicion from the "good guys," incessant attacks from those he's hurt in the past, and truly ambiguous questions on how to move forwards. Dr. Doom tells an old nemesis, Ben Grimm, that he refused to turn himself in because he could "do more to right his wrongs from out here." And he's right. Ben Grimm replies: "But it ain't up to ya." And he's right too.
+			</p>
+			<h5><i>Vader (2015)</i></h5>
+			<p>
+				Speaking of Darth Vader...
+			</p>
+		</div>	
+		
+	</div>
+	
+	<div class="animated" id="bottom">
+		<div class="border-line" id="border-line-bottom">
+	</div>
+	
 </body>
 </html>

@@ -2,322 +2,252 @@ body{
 	font-family: 'Helvetica Neue', serif;
 	margin:0;
 	background-color:rgb(255,254,235);
-}
-.sectionheader, #projectheader, .subheader{
-	position:absolute;
-	top:50%;
-	left:50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-	z-index:1;
-}
-#projectheader{
-	transform:translate(-50%, -100%) !important;
-}
-.section{
-	position:relative;
-	height:100vh;
+	overflow: hidden;
 }
 
-#init-holder{
-	height:100vh;
-	width:100%;
-}
 #top, #bottom{
 	position: absolute;
 	height:50vh;
 	width:100%;
 	background-color:lightblue;
 }
-.border{
+
+#border{
 	position:absolute;
-	height:5vw;
-	width:5%;
-	left:37.5%;
-	right:50%;
-	top:50%;
+	left:50%;
+	top:100%;
+	transform:translate(-50%,-50%);
 	border-radius:50%;
 	padding:10%;
 	background-color:black;
+	z-index:2;
 }
+
+#headshot{
+	position:absolute;
+	height:90%;
+	border-radius:50%;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	z-index:3;
+}
+
 .border-line{
 	position:absolute;
-	height:5%;
 	width:100%;
 	background-color:black;
 	top:100%;
 	transform:translateY(-100%);
 }
-#headshot{
-	position:absolute;
-	border-radius:50%;
-	left:50%;
-	top:50%;
-	bottom:50%;
-	transform:translate(-50%,-50%);
-}
-
-#top{
-	z-index:1;
-}
-#top h1{
-	display:inline-block;
-	font-size:500%;
-	text-align:center;
-}
-#firstname{
-	position:absolute;
-	top:55%;
-	right:65%;
-}
-#lastname{
-	position:absolute;
-	left:65%;
-	top:55%;
-}
 
 #bottom{
 	top:50%;
+	z-index:-1;
 }
+
 #border-line-bottom{
-	top:0 !important;
-}
-
-
-#profile{
-	position:absolute;
-	left:50%;
-	top:60%;
-	transform:translateX(-50%);
-	text-align:center;
-}
-ul{
-	list-style-type:none;
-}
-nav{
-	text-align:center;
-}
-
-#menloinfo{
-	background-color:navy;
-	color:yellow;
-	color:gold;
-}
-#menloinfo .heading{
-	color:navy;
-	background-color:yellow;
-	background-color: gold;
-	text-align:left;
-}
-#wellesleyinfo{
-	background-color:blue;
-	background-color:darkblue;
-	color:white;
-}
-#wellesleyinfo .heading{
-	color:blue;
-	color:darkblue;
-	background-color:white;
-	text-align:center;
-}
-.schoolpage .heading{
-	text-align:left;
-	padding-left:4%;
-}
-.banner{
-	position:absolute;
 	top:0%;
-	width:100%;
-	height:15%;
+	transform:translateY(0%);
+	height:5%;
+	z-index:-1;
 }
-.bottombanner{
-	top:85%;
+
+#border-line-top{
+	top:100%;
+	transform:translateY(-50%);
+	height:10%;
 }
-.center{
+
+.section{
 	position:absolute;
-	top:15%;
+	top:30%;
+	height:50%;
+	width:70%;
+	left:15%;
+	overflow-y:scroll;
+}
+
+#navbar{
+	position:absolute;
+	top:100%;
+	transform:translateY(-50%);
 	width:100%;
-	height:70%;
+	height:10%;
+	background-color:black;
+}
+
+#navbar button{
+	border-radius:0px;
+	background-color:black;
+	width:10%;
+	height:100%;
+	color:lightblue;
+	text-align:center;
+	border:none;
+}
+
+#b0{
+	position:absolute;
+	left:2%;
+}
+#b1{
+	position:absolute;
+	left:15%;
+}
+#b2{
+	position:absolute;
+	left:28%;
+}
+#b3{
+	position:absolute;
+	right:28%;
+}
+#b4{
+	position:absolute;
+	right:15%;
+}
+#b5{
+	position:absolute;
+	right:2%;
+}
+
+#about{
+	top:40%;
 	text-align:center;
 }
-#wellesleyinfo .center{
-	text-align:left;
-}
-.center-contents{
-	position:absolute;
-	width:100%;
-	top:50%;
-	transform:translateY(-50%);
+
+.experience-item ul{
+	margin-top:0;
 }
 
-.page-holder{
-	position:relative;
-}
-.page{
-	z-index:2;
-	width:85%;
-	left:15%;
-	position:absolute;
-	height:100vh;
-	transform:translateY(-100%);
-}
-.slider{
-	background-color: rgba(0,0,0,.35);
-	position:absolute;
-	height:100%;
-	width:3%;
+#projects{
+	overflow-x:hidden;
+	top:19%;
+	height:72%;
 	left:0%;
-}
-.arrow{
-	position:absolute;
-	z-index:3;
-	height:20%;
 	width:100%;
-	top:50%;
-	transform:translateY(-50%);
+	z-index:-1;
 }
 
-.image{
-	background-size:cover;
+.project{
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+#bds{
+	visibility:hidden;
+	background:url("images/bds.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
 	background-position:center;
 }
-
+#pkmn{
+	visibility:hidden;
+	background:url("images/pkmn.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#humv{
+	visibility:hidden;
+	background:url("images/checkin.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#whack{
+	visibility:hidden;
+	background:url("images/froodies.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#cte{
+	visibility:hidden;
+	background:url("images/cte.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#tower{
+	visibility:hidden;
+	background:url("images/tower.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#projectnav{
+	position:absolute;
+	top:50%;
+	width:100%;
+	z-index:1;
+}
+#projectnav button{
+	border-radius:0px;
+	background-color:transparent;
+	border:none;
+	font-size:200%;
+}
+#prev-button{
+	position:absolute;
+	left:5%;
+	transform:translate(-50%, -50%);
+}
+#prev-button span:before{
+	content: '\00AB';
+}
+#next-button{
+	position:absolute;
+	left:95%;
+	transform:translate(-50%, -50%);
+}
+#next-button span:after{
+	content: '\00BB';
+	
+}
+.project-contents{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.4);
+}
+.project-text{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:rgb(255,254,235);;
+}
 a{
 	color:inherit;
 }
-a:visited{
-	color:inherit;
+#cte .project-contents{
+	background-color:rgba(0,0,0,0.6);
 }
 
-
-.well {
-    padding: 19px;
-    background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-}
-
-.project .well{
-	position:absolute;
-    height:80%;
-	top:5%;
-	width:80%;
-	left:5%;
-}
-
-.project-text{
-	position:absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-	border-radius: 4px;
-	background-color:rgba(255,255,255,.7);
-	color:black;
-}
-.inner-project-text{
-	padding:10%;
-}
-.inner-project-text h2{
-	margin-top:0;
-}
-.project{
-	position:absolute;
-	width:33.3333%;
-	height:50%;
-}
-#projects a{
-	position:absolute;
-	top:0%;
-	left:50%;
-	transform:translate(-50%, -10%);
-}
-#project0{
-	background-image:;
-}
-#project1{
-	left:33.3333%;
-	background-image:;
-}
-#project2{
-	left:66.6667%;
-	background-image:;
-}
-#project3{
-	top:50%;
-	background-image:;
-}
-#project4{
-	top:50%;
-	left:33.3333%;
-	background-image:;
-}
-#project5{
-	top:50%;
-	left:66.6667%;
-	background-image:;
-}
-
-.readability-black{
-	background-color:rgba(255,255,255,.15);
-	position:absolute;
-	height:100%;
-	width:100%;
-	top:0;
-	left:0;
-	z-index:1;
+#skills{
+	overflow:hidden;
 }
 
 .skill{
 	position:absolute;
-	height:20%;
-	width:100%;
+	width:40%;
+	height:100%;
+	overflow-y:scroll;
 }
-#skill1{
-	top:25%;
+#skills1{
+	left:0%;
 }
-#skill2{
-	top:50%;
-}
-#skill3{
-	top:75%;
-}
-.fit-height{
-	max-height:100%;
-	min-height:100%;
+#skills2{
 	position:absolute;
-	left:50%;
-	transform:translateX(-50%);
-}
-#skills .sectionheader{
-	writing-mode:tb-rl;
-	text-orientation:upright;
-	left:20%;
-}
-#skills-sectionheader-right{
-	left:75% !important;
+	right:0%;
 }
 
-.school{
-	position:absolute;
-	width:100%;
+#favorites{
+	top:30%;
 	height:50%;
-}
-#wellesley{
-	top:0;
-}
-#menlo{
-	top:50%;
-}
-#education{
-	text-align:center;
-}
-#education .well{
-	position:absolute;
-	top:10%;
-	left:5%;
-	height:80%;
-	width:90%;
+	width:80%;
+	left:10%;
 }
