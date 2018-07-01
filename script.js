@@ -73,9 +73,7 @@ function previousProject(){
 	$(projects[temp]).removeClass(slidingClasses)
 	$(projects[temp]).addClass("slideInLeft")
 	
-	setTimeout(function(){
-		$(projects[temp]).css("visibility","visible");
-	}, 1000);
+	$(projects[temp]).css("visibility","visible");
 	
 	currentProjectIndex = temp;
 }
