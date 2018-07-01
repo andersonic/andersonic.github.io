@@ -113,7 +113,13 @@ body{
 }
 
 #about{
+	position:absolute;
 	text-align:center;
+	top:55%;
+	width:70%;
+	left:15%;
+	overflow-y:scroll;
+	transform:translateY(-50%);
 }
 
 .experience-item ul{
