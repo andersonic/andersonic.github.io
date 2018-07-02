@@ -216,7 +216,7 @@ body{
 	position:absolute;
 	height:100%;
 	width:100%;
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0,0,0,0.5);
 }
 .project-text{
 	position:absolute;
@@ -228,9 +228,7 @@ body{
 a{
 	color:inherit;
 }
-#cte .project-contents{
-	background-color:rgba(0,0,0,0.6);
-}
+
 
 #skills{
 	overflow:hidden;
