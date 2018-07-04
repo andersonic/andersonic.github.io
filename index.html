@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jun Ru Anderson</title>
 	<link rel="stylesheet" type="text/css" href="Animate.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -77,75 +78,74 @@
 			<div class="" id="projectnav">
 				<button id="prev-button" onclick="previousProject()"><span></span></button>
 				<button id="next-button" onclick="nextProject()"><span></span></button>	
-			</div>
-		
-		<div class="project animated" id="bds">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>Brown Datathon: DiscoveryInsights</h1>
-					<p>
-						For this project, I worked with a data set provided by DiscoveryEngine, a non-profit that allows laypeople to rate academic papers along three metrics. Datathon participants were given the opportunity to decide what direction to take; I chose to investigate potential bias in paper ratings based on the author’s perceived gender. Given the DOI of the paper and the user ratings for each metric, I used the crossref api to find the author's name, and passed it to genderize.io to guess the author's gender. With this information, I was able to separate paper's and use SciPy to perform T-tests. Happily, I found no significant difference in the ratings of papers by male, female, and indeterminate (e.x., only first initial given) authors.<br><br>Congratulations to Jong and Vaibhav, with whom I tied for first place.
-					</p>
-				</div>
 			</div>	
-		</div>
-		<div class="project animated" id="pkmn">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>CS232 Artificial Intelligence:Pokémon AI</h1>
-					<h4><a href="https://github.com/andersonic/cs232-final" target="_blank">GitHub Repository</a></h4>
-					<p>
-						This project used Python to create a competitive Pokémon-playing agent. Pokémon is a stochastic game of asymmetrical knowledge, but most interestingly, has players choose actions at the same time (as opposed to chess or checkers, in which action choice is sequential). My team implemented three battling algorithms.<br><br>I implemented the random battling, whose performance was as poor as one would expect, and the expectimax algorithm, which peaked at ELO 1309 and had a GXE (expected long-term winrate) of 54.4% after 50 battles. I was also responsible for interfacing with the battle simulator, Pokémon Showdown, using the Selenium library.<br><br>Shoutouts to my partners, Dana and Hershel.
-					</p>
-				</div>		
+			<div class="project animated" id="bds">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>Brown Datathon: DiscoveryInsights</h1>
+						<p>
+							For this project, I worked with a data set provided by DiscoveryEngine, a non-profit that allows laypeople to rate academic papers along three metrics. Datathon participants were given the opportunity to decide what direction to take; I chose to investigate potential bias in paper ratings based on the author’s perceived gender. Given the DOI of the paper and the user ratings for each metric, I used the crossref api to find the author's name, and passed it to genderize.io to guess the author's gender. With this information, I was able to separate paper's and use SciPy to perform T-tests. Happily, I found no significant difference in the ratings of papers by male, female, and indeterminate (e.x., only first initial given) authors.<br><br>Congratulations to Jong and Vaibhav, with whom I tied for first place.
+						</p>
+					</div>
+				</div>	
 			</div>
-		</div>
-		<div class="project animated" id="tower">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>AP Computer Science:Tower Defense</h1>
-					<h4><a href="https://github.com/andersonic/towerdefense" target="_blank">GitHub Repository</a></h4>
-					<p>
+			<div class="project animated" id="pkmn">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>CS232-Artificial Intelligence: Pokémon AI</h1>
+						<h4><a href="https://github.com/andersonic/cs232-final" target="_blank">GitHub Repository</a></h4>
+						<p>
+							This project used Python to create a competitive Pokémon-playing agent. Pokémon is a stochastic game of asymmetrical knowledge, but most interestingly, has players choose actions at the same time (as opposed to chess or checkers, in which action choice is sequential). My team implemented three battling algorithms.<br><br>I implemented the random battling, whose performance was as poor as one would expect, and the expectimax algorithm, which peaked at ELO 1309 and had a GXE (expected long-term winrate) of 54.4% after 50 battles. I was also responsible for interfacing with the battle simulator, Pokémon Showdown, using the Selenium library.<br><br>Shoutouts to my partners, Dana and Hershel.
+						</p>
+					</div>		
+				</div>
+			</div>
+			<div class="project animated" id="tower">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>AP Computer Science:Tower Defense</h1>
+						<h4><a href="https://github.com/andersonic/towerdefense" target="_blank">GitHub Repository</a></h4>
+						<p>
 						A tower defense game written with Java, and my final project for AP Computer Science. The player builds defensive units to defend the player's tower and stop an invading force.<br><br>Shoutouts to Alice for being an awesome partner for this project.
-					</p>
-				</div>					
-			</div>	
-		</div>
-		<div class="project animated" id="humv">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>HackUMassV: CheckIn</h1>
-					<h4><a href="https://github.com/andersonic/CheckIn-HackUMassV" target="_blank">GitHub Repository</a></h4>
-					<p>
+						</p>
+					</div>					
+				</div>	
+			</div>
+			<div class="project animated" id="humv">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>HackUMassV: CheckIn</h1>
+						<h4><a href="https://github.com/andersonic/CheckIn-HackUMassV" target="_blank">GitHub Repository</a></h4>
+						<p>
 						CheckIn allows the user to set automated daily check-ins with aging friends or relatives, and alerts the user if the check-in goes unanswered. CheckIn uses Python and Swift, and incorporates CMU Sphinx speech-to-text, Amazon Alexa text-to-speech, the DropBox SDK, and the JSON library for Python.<br><br>Shoutouts to my teammates David, Declan and Eric, all of whom were essential to our team's winning Best Hardware Hack.
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="project animated" id="whack">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>WhackFall2017: Froodees</h1>
-					<h4><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">GitHub Repository</a></h4>
-					<p>
-						This webapp, built with Flask, HTML, and CSS, connects would-be wasted food with people in need. I worked almost exclusively on the back end, handling food submissions and location-based requests for food.<br><br>Shoutouts to my collaborators and fellow Wellesley women Marinn, Rachel, and Sandra.
-					</p>
-				</div>
-			</div>	
-		</div>
-		<div class="project animated" id="cte">
-			<div class="project-contents">
-				<div class="project-text">
-					<h1>Hobby Project: Ciphered Text Editor</h1>
-					<h4><a href="https://github.com/andersonic/ciphered-text-editor" target="_blank">GitHub Repository</a></h4>
-					<p>
-						A text editor that provides support for enciphering and deciphering file contents according to a key/code. Implements a few vi-like keyboard commands. If quit through the supported keyboard command (as opposed to OS-level keyboard shortcuts such as Command-Q), contents will be enciphered before the file is saved if they are not enciphered when the user quits.<br><br>Credit and thanks to user Turk4n on Codecall for starter code related to the GUI. See tutorial here: <a href="http://forum.codecall.net/topic/49721-simple-text-editor/" target="_blank">http://forum.codecall.net/topic/49721-simple-text-editor/</a>
-					</p>
-				</div>
+			<div class="project animated" id="whack">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>WhackFall2017: Froodees</h1>
+						<h4><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">GitHub Repository</a></h4>
+						<p>
+							This webapp, built with Flask, HTML, and CSS, connects would-be wasted food with people in need. I worked almost exclusively on the back end, handling food submissions and location-based requests for food.<br><br>Shoutouts to my collaborators and fellow Wellesley women Marinn, Rachel, and Sandra.
+						</p>
+					</div>
+				</div>	
+			</div>
+			<div class="project animated" id="cte">
+				<div class="project-contents">
+					<div class="project-text">
+						<h1>Hobby Project: Ciphered Text Editor</h1>
+						<h4><a href="https://github.com/andersonic/ciphered-text-editor" target="_blank">GitHub Repository</a></h4>
+						<p>
+							A text editor that provides support for enciphering and deciphering file contents according to a key/code. Implements a few vi-like keyboard commands. If quit through the supported keyboard command (as opposed to OS-level keyboard shortcuts such as Command-Q), contents will be enciphered before the file is saved if they are not enciphered when the user quits.<br><br>Credit and thanks to user Turk4n on Codecall for starter code related to the GUI. See tutorial here: <a href="http://forum.codecall.net/topic/49721-simple-text-editor/" target="_blank">http://forum.codecall.net/topic/49721-simple-text-editor/</a>
+						</p>
+					</div>
 				
+				</div>
 			</div>
 		</div>
-	</div>
 		<div class="row section" id="skills" hidden>
 			<div class="col-md-6">
 				<div class="language">
