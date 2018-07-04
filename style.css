@@ -193,7 +193,7 @@ body{
 	border-radius:0px;
 	background-color:transparent;
 	border:none;
-	font-size:200%;
+	font-size:300%;
 }
 #prev-button{
 	position:absolute;
@@ -231,15 +231,9 @@ a{
 
 
 #skills{
-	overflow:hidden;
-}
-
-.skill{
-	position:absolute;
-	width:40%;
-	height:100%;
 	overflow-y:scroll;
 }
+
 #skills1{
 	left:0%;
 }

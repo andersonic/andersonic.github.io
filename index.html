@@ -3,37 +3,43 @@
 <head>
 	<title>Jun Ru Anderson</title>
 	<link rel="stylesheet" type="text/css" href="Animate.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>	
-	<div class="animated" id="top">
-		<div class="border-line" id="border-line-top">
-		</div>
-		<div class="animated" id="border">
-			<img id="headshot" src="images/headshot.jpg" alt="headshot" onclick="showPage()">
-		</div>
+	<div class="container">
+		<div class="row animated" id="top">
+			<div class="border-line" id="border-line-top">
+			</div>
+			<div class="animated" id="border">
+				<img id="headshot" src="images/headshot.jpg" alt="headshot" onclick="showPage()">
+			</div>
 		
-		<div class="animated" id="navbar" hidden>
-			<button id="b0" onclick="showSection('#about')"><span>About Me</span></button>
-			<button id="b1" onclick="showSection('#experience')"><span>Experience</span></button> 
-			<button id="b2" onclick="showSection('#projects')"><span>Projects</span></button> 
-			<button id="b3" onclick="showSection('#skills')"><span>Skills</span></button> 
-			<button id="b4" onclick="showSection('#awards')"><span>Awards</span></button> 
-			<button id="b5" onclick="showSection('#favorites')"><span>Favorites</span></button> 
+			<div class="animated" id="navbar" hidden>
+				<button id="b0" onclick="showSection('#about')"><span>About Me</span></button>
+				<button id="b1" onclick="showSection('#experience')"><span>Experience</span></button> 
+				<button id="b2" onclick="showSection('#projects')"><span>Projects</span></button> 
+				<button id="b3" onclick="showSection('#skills')"><span>Skills</span></button> 
+				<button id="b4" onclick="showSection('#awards')"><span>Awards</span></button> 
+				<button id="b5" onclick="showSection('#favorites')"><span>Favorites</span></button> 
+			</div>
 		</div>
-	</div>
-	<div class="" id="about" hidden>
-		<h3>Hello World!</h3>
-		<p>My name is Jun Ru Anderson. I'm a sophomore double majoring in math and computer science at Wellesley College. I'm a tutor for the Introduction to Computer Systems class and a research assistant in Professor Eni Mustafaraj's lab.<br><br>Outside of computer science, I love reading and writing. I've completed NaNoWriMo three times and participated in Camp Nanowrimo seven times. I also enjoy taking walks around Wellesley's Lake Waban.<br><br>
-		<a href="documents/resume.pdf" target="_blank">Résumé</a></p>
-		<h3>Get in Touch</h3>
-		<p>Email: junru.anderson@wellesley.edu<br>
-		LinkedIn: <a href="linkedin.com/in/junruanderson">linkedin.com/in/junruanderson</a><br>
-		GitHub: <a href="github.com/andersonic">github.com/andersonic</a></p>
-	</div>
-	<div class="section" id="experience" hidden>
+
+		<div class="row section" id="about" hidden>
+			<h3>Hello World!</h3>
+			<p>My name is Jun Ru Anderson. I'm a sophomore double majoring in math and computer science at Wellesley College. I'm a tutor for the Introduction to Computer Systems class and a research assistant in Professor Eni Mustafaraj's lab.<br><br>Outside of computer science, I love reading and writing. I've completed NaNoWriMo three times and participated in Camp Nanowrimo seven times. I also enjoy taking walks around Wellesley's Lake Waban.<br><br>
+				<a href="documents/resume.pdf" target="_blank">Résumé</a>
+			</p>
+			<h3>Get in Touch</h3>
+			<p>Email: junru.anderson@wellesley.edu<br>
+				LinkedIn: <a href="linkedin.com/in/junruanderson">linkedin.com/in/junruanderson</a><br>
+				GitHub: <a href="github.com/andersonic">github.com/andersonic</a>
+			</p>
+		</div>
+		<div class="row section" id="experience" hidden>
 		<div class="experience-item">
 			<b>Wellesley College Science Center</b>, Wellesley, MA <span style="float:right">June 2018-Present</span><br>
 			<i>Research Assistant</i>
@@ -67,11 +73,11 @@
 			</ul>
 		</div>
 	</div>
-	<div class="section" id="projects" hidden>
-		<div class="" id="projectnav">
-			<button id="prev-button" onclick="previousProject()"><span></span></button>
-			<button id="next-button" onclick="nextProject()"><span></span></button>	
-		</div>
+		<div class="row section" id="projects" hidden>
+			<div class="" id="projectnav">
+				<button id="prev-button" onclick="previousProject()"><span></span></button>
+				<button id="next-button" onclick="nextProject()"><span></span></button>	
+			</div>
 		
 		<div class="project animated" id="bds">
 			<div class="project-contents">
@@ -140,70 +146,69 @@
 			</div>
 		</div>
 	</div>
-	<div class="section" id="skills" hidden>
-		<div class="skill" id="skills1">
-			<div class="language">
-				<h3>Java</h3>
-				<i>Classes:</i> AP Computer Science<br>
-				<i>Familiar Libraries:</i> JFrame<br>
-				<i>Projects:</i> Tower Defense, Ciphered Text Editor<br>
+		<div class="row section" id="skills" hidden>
+			<div class="col-md-6">
+				<div class="language">
+					<h3>Java</h3>
+					<i>Classes:</i> AP Computer Science<br>
+					<i>Familiar Libraries:</i> JFrame<br>
+					<i>Projects:</i> Tower Defense, Ciphered Text Editor<br>
+				</div>
+				<div class="language">
+					<h3>HTML/CSS/JavaScript</h3>
+					<i>Classes:</i> None<br>
+					<i>Familiar Libraries:</i> Animate, Bootstrap, JQuery<br>
+					<i>Projects:</i> This<br>
+				</div>	
 			</div>
-			<div class="language">
-				<h3>HTML/CSS/JavaScript</h3>
-				<i>Classes:</i> None<br>
-				<i>Familiar Libraries:</i> Animate, Bootstrap, JQuery<br>
-				<i>Projects:</i> This<br>
+			<div class="col-md-6">
+				<div class="language">
+					<h3>Python</h3>
+					<i>Classes:</i> CS232-Artificial Intelligence<br>
+					<i>Familiar Libraries:</i> Flask, Selenium, OpenCV, scikit-learn, Keras<br>
+					<i>Projects:</i> Pokémon Playing Agent, <br>
+				</div>
+				<div class="language">
+					<h3>C</h3>
+					<i>Classes:</i> CS240-Introduction to Computer Systems<br>
+				</div>
 			</div>
-			
 		</div>
-		<div class="skill" id="skills2">
-			<div class="language">
-				<h3>Python</h3>
-				<i>Classes:</i> CS232-Artificial Intelligence<br>
-				<i>Familiar Libraries:</i> Flask, Selenium, OpenCV, scikit-learn, Keras<br>
-				<i>Projects:</i> Pokémon Playing Agent, <br>
-			</div>
-			<div class="language">
-				<h3>C</h3>
-				<i>Classes:</i> CS240-Introduction to Computer Systems<br>
-			</div>
-		</div>
-	</div>
-	<div class="section" id="awards" hidden>
+		<div class="row section" id="awards" hidden>
 		Brown Datathon - First Place (2018)<br>
 		HackUMassV - Best Hardware Hack (2017)<br>
 		National Merit Scholar (2017)<br>
 		Presidential Scholar Candidate (2017)<br>
 		National AP Scholar (2017)<br>
 	</div>
-	<div class="section" id="favorites" hidden>
-		<h2>A Few of My Favorite Things</h3>
-		<div class="favorite" id="books">
-			<h3>Book</h3>
-			<h5><i>The Martian</i></h5>
-			<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
-		</div>
-		<div class="favorite" id="musical">
-			<h3>Musical</h3>
-			<h5><i>Wicked</i></h5>
-		</div>
-		<div class="favorite" id="comic-books">
-			<h3>Comic Book Series</h3>
-			<h5><i>Infamous Iron Man (2016)</i></h5>
-			<p>
+		<div class="row section" id="favorites" hidden>
+			<h2>A Few of My Favorite Things</h3>
+			<div class="favorite" id="books">
+				<h3>Book</h3>
+				<h5><i>The Martian</i></h5>
+				<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
+			</div>
+			<div class="favorite" id="musical">
+				<h3>Musical</h3>
+				<h5><i>Wicked</i></h5>
+			</div>
+			<div class="favorite" id="comic-books">
+				<h3>Comic Book Series</h3>
+				<h5><i>Infamous Iron Man (2016)</i></h5>
+				<p>
 				From Darth Vader to Loki to Severus Snape, redemption stories usually end in the redeemed character's death. Starting in <i>Invincible Iron Man (2015)</i> and continuing in his own series, <i>Infamous Iron Man</i>, Dr. Doom tries to become a hero--and has to live with it. Now hounded by both the authorities for having been evil and his former allies for having changed, Dr. Doom must confront suspicion from the "good guys," incessant attacks from those he's hurt in the past, and truly ambiguous questions on how to move forwards. Dr. Doom tells an old nemesis, Ben Grimm, that he refused to turn himself in because he could "do more to right his wrongs from out here." And he's right. Ben Grimm replies: "But it ain't up to ya." And he's right too.
-			</p>
-			<h5><i>Vader (2015)</i></h5>
-			<p>
-				Speaking of Darth Vader...
-			</p>
-		</div>	
+				</p>
+				<h5><i>Vader (2015)</i></h5>
+				<p>
+					Speaking of Darth Vader...
+				</p>
+			</div>		
+		</div>
 		
-	</div>
-	
-	<div class="animated" id="bottom">
+		
+		<div class="row animated" id="bottom">
 		<div class="border-line" id="border-line-bottom">
 	</div>
-	
+	</div>
 </body>
 </html>
