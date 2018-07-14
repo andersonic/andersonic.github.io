@@ -41,39 +41,40 @@
 			</p>
 		</div>
 		<div class="row section" id="experience" hidden>
-		<div class="experience-item">
-			<b>Wellesley College Science Center</b>, Wellesley, MA <span style="float:right">June 2018-Present</span><br>
-			<i>Research Assistant</i>
-			<ul>
-				<li>Identify credibility signals from news websites that can be used to combat fake news</li>
-				<li>Use Selenium (web scraping) to automate the collection of a 455-sample dataset</li>
-				<li>Use OpenCV (computer vision), scikit-learn (machine learning), and Keras (deep learning) to create models that predict credibility of news sources with 88%-94% accuracy</li>
-			</ul>
+			<div class="experience-item">
+				<b>Wellesley College Science Center</b>, Wellesley, MA <span style="float:right">June 2018-Present</span><br>
+				<i>Research Assistant</i>
+				<ul>
+					<li>Identify credibility signals from news websites that can be used to combat fake news</li>
+					<li>Use Selenium (web scraping) to automate the collection of a 455-sample dataset</li>
+					<li>Use OpenCV (computer vision), scikit-learn (machine learning), and Keras (deep learning) to create models that predict credibility of news sources with up to 94% accuracy
+					</li>
+				</ul>
+			</div>
+			<div class="experience-item">
+				<b>Pforzheimer Learning and Teaching Center</b>, Wellesley, MA <span style="float:right">January 2018-Present</span><br>
+				<i>Computer Science Department Tutor</i>
+				<ul>
+					<li>Answer questions on topics ranging from logic gates to C programming</li>
+					<li>Hold weekly review sessions for 12 students and bi-weekly drop in hours for up to 25 students/li>
+				</ul>
+			</div>
+			<div class="experience-item">
+				<b>Wellesley College Library and Technology Services</b>, Wellesley, MA <span style="float:right">February 2018-March 2018</span><br>
+				<i>Software Deployment Assistant</i>
+				<ul>
+					<li>Built scripts for use in deploying the school-wide Microsoft Windows 10 image</li>
+					<li>Wrote and tested flags and batch files to silently install five applications</li>
+				</ul>
+			</div>
+			<div class="experience-item">
+				<b>Mathnasium of Redwood City</b>, Redwood City, CA <span style="float:right">April 2016-March 2017</span><br>
+				<i>Math Instructor</i>
+				<ul>
+					<li>Taught math lessons to groups of four students on topics ranging from number sense to calculus</li>
+				</ul>
+			</div>
 		</div>
-		<div class="experience-item">
-			<b>Pforzheimer Learning and Teaching Center</b>, Wellesley, MA <span style="float:right">January 2018-Present</span><br>
-			<i>Computer Science Department Tutor</i>
-			<ul>
-				<li>Answer questions on topics such as processors, caching, and dynamic memory allocation</li>
-				<li>Help students understand the stack, read disassembled code, and program in C</li>
-			</ul>
-		</div>
-		<div class="experience-item">
-			<b>Wellesley College Library and Technology Services</b>, Wellesley, MA <span style="float:right">February 2018-March 2018</span><br>
-			<i>Software Deployment Assistant</i>
-			<ul>
-				<li>Built scripts for use in deploying the school-wide Microsoft Windows 10 image</li>
-				<li>Wrote and tested flags and batch files to silently install a variety of applications</li>
-			</ul>
-		</div>
-		<div class="experience-item">
-			<b>Mathnasium of Redwood City</b>, Redwood City, CA <span style="float:right">April 2016-March 2017</span><br>
-			<i>Math Instructor</i>
-			<ul>
-				<li>Taught math lessons to groups of four students on topics ranging from number sense to calculus</li>
-			</ul>
-		</div>
-	</div>
 		<div class="row section" id="projects" hidden>
 			<div class="" id="projectnav">
 				<button id="prev-button" onclick="previousProject()"><span></span></button>
@@ -166,7 +167,7 @@
 					<h3>Python</h3>
 					<i>Classes:</i> CS232-Artificial Intelligence<br>
 					<i>Familiar Libraries:</i> Flask, Selenium, OpenCV, scikit-learn, Keras<br>
-					<i>Projects:</i> Pokémon Playing Agent, <br>
+					<i>Projects:</i> Pokémon Playing Agent, CheckIn, Froodees<br>
 				</div>
 				<div class="language">
 					<h3>C</h3>
@@ -181,27 +182,67 @@
 		Presidential Scholar Candidate (2017)<br>
 		National AP Scholar (2017)<br>
 	</div>
-		<div class="row section" id="favorites" hidden>
+		
+		<div class="section" id="favorites" hidden>
 			<h2>A Few of My Favorite Things</h3>
 			<div class="favorite" id="books">
-				<h3>Book</h3>
-				<h5><i>The Martian</i></h5>
-				<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
+				<h3>Books</h3>
+				<div class="row">
+					<div class="col-md-1 imgcol">
+						<img class="cover-image" src="images/themartian.jpg">
+					</div>
+					<div class="col-md-11">
+						<h5><i>The Martian</i> by Andy Weir</h5>
+						<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 imgcol">
+						<img class="cover-image" src="images/prisoner.jpg">
+					</div>
+					<div class="col-md-11">
+						<h5><i>The Prisoner in His Palace</i> by Will Bardenwerper</h5>
+						<p>About the last months of Saddam Hussein's life, and the twelve American men who guarded him during that time. This book stares unflinchingly at the complexity of human nature and the horrors of war as the American guards befriend the Iraqi dictator despite knowing his crimes, and must then deliver him to the gallows.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="favorite" id="musical">
 				<h3>Musical</h3>
-				<h5><i>Wicked</i></h5>
+				<div class="row">
+					<div class="col-md-1 imgcol">
+						<img class="cover-image" src="images/wicked.jpg">
+					</div>
+					<div class="col-md-11"><h5><i>Wicked</i></h5>
+						<p>With inspiring characters, great music and a touching story (based of an enjoyable book), <i>Wicked</i> is without doubt my all-time favorite musical.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="favorite" id="comic-books">
 				<h3>Comic Book Series</h3>
-				<h5><i>Infamous Iron Man (2016)</i></h5>
-				<p>
-				From Darth Vader to Loki to Severus Snape, redemption stories usually end in the redeemed character's death. Starting in <i>Invincible Iron Man (2015)</i> and continuing in his own series, <i>Infamous Iron Man</i>, Dr. Doom tries to become a hero--and has to live with it. Now hounded by both the authorities for having been evil and his former allies for having changed, Dr. Doom must confront suspicion from the "good guys," incessant attacks from those he's hurt in the past, and truly ambiguous questions on how to move forwards. Dr. Doom tells an old nemesis, Ben Grimm, that he refused to turn himself in because he could "do more to right his wrongs from out here." And he's right. Ben Grimm replies: "But it ain't up to ya." And he's right too.
-				</p>
-				<h5><i>Vader (2015)</i></h5>
-				<p>
-					Speaking of Darth Vader...
-				</p>
+				<div class="row">
+					<div class="col-md-1 imgcol">
+						<img class="cover-image" src="images/iim.jpg">
+					</div>
+					<div class="col-md-11">
+						<h5><i>Infamous Iron Man (2016)</i> created by Brian Michael Bendis and Alex Maleev</h5>
+						<p>
+						From Darth Vader to Loki to Severus Snape, redemption stories usually end in the redeemed character's swift death. Starting in <i>Invincible Iron Man (2015)</i> and continuing in his own series, <i>Infamous Iron Man</i>, Doctor Doom tries to become a hero&mdash;and has to live with it.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 imgcol">
+						<img class="cover-image" src="images/vader.jpg">
+					</div>
+					<div class="col-md-11">
+						<h5><i>Vader (2015)</i> created by Kieron Gillen, Salvador Larroca and Adi Granov</h5>
+						<p>
+							Speaking of Darth Vader&hellip;have you ever wondered how he went from hurtling through space in a TIE fighter to commanding a Super Star Destroyer? This series answers that question, exploring Darth Vader's exploits between <i>A New Hope</i> and <i>The Empire Strikes Back</i>.
+						</p>
+					</div>
+				</div>
 			</div>		
 		</div>
 		

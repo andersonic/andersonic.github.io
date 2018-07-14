@@ -251,3 +251,11 @@ a{
 	width:80%;
 	left:10%;
 }
+
+.cover-image{
+	max-height:100%;
+	max-width:100%;
+}
+.imgcol{
+	height:100%;
+}
