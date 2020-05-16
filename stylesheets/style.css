@@ -1,0 +1,19 @@
+body{
+	color: #838687;
+}
+
+.fit-image {
+width: 75%;
+}
+
+.icon{
+	width:40px;
+	height:40px;
+	margin:0.75%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,257 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Jun Ru Anderson</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jun Ru Anderson</title>
-	<meta name="description" content="Jun Ru Anderson--Student, Tutor at Wellesley College."/>
 	<meta name="keywords" content="Jun Ru Anderson,Jun Ru,andersonic"/>
-	<link rel="stylesheet" type="text/css" href="Animate.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="Jun Ru Anderson--Student, Tutor at Wellesley College."/>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="bootstrap.min.js"></script>
-	<script src="script.js"></script>
 </head>
-<body>	
+<body>
 	<div class="container">
-		<div class="row animated" id="top">
-			<div class="border-line" id="border-line-top">
+		<div class="row" style="height:50px">
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="images/profilephoto.png" alt="Jun Ru" class="fit-image center" style="border-radius:50%;">
 			</div>
-			<div class="animated" id="border">
-				<img id="headshot" src="images/headshot.jpg" alt="Jun Ru Headshot" onclick="showPage()">
-			</div>
-		
-			<div class="animated" id="navbar" hidden>
-				<button id="b0" onclick="showSection('#about')"><span>About Me</span></button>
-				<button id="b1" onclick="showSection('#experience')"><span>Experience</span></button> 
-				<button id="b2" onclick="showSection('#projects')"><span>Projects</span></button> 
-				<button id="b3" onclick="showSection('#skills')"><span>Skills</span></button> 
-				<button id="b4" onclick="showSection('#awards')"><span>Awards</span></button> 
-				<button id="b5" onclick="showSection('#favorites')"><span>Favorites</span></button> 
+			<div class="col-md-8">
+				<h1> Jun Ru Anderson</h1>
+				<h4> Student, Statistician and Software Engineer</h4>
+				<hr>
+				<p> Hello world! My name is Jun Ru Anderson, and I am an undergraduate studying computer science and mathematics at Wellesley College. </p>
 			</div>
 		</div>
-
-		<div class="row section" id="about" hidden>
-			<h3>Hello World!</h3>
-			<p>My name is Jun Ru Anderson. I'm a sophomore double majoring in math and computer science at Wellesley College. I'm a tutor for the Introduction to Computer Systems class and a research assistant in Professor Eni Mustafaraj's lab.<br><br>Outside of computer science, I love reading and writing. I've completed NaNoWriMo three times and participated in Camp Nanowrimo seven times. I also enjoy taking walks around Wellesley's Lake Waban.<br><br>
-				<a href="documents/anderson_junru_resume.pdf" target="_blank">Résumé</a>
-			</p>
-			<h3>Get in Touch</h3>
-			<p>Email: junru.anderson@wellesley.edu<br>
-				LinkedIn: <a href="linkedin.com/in/junruanderson">linkedin.com/in/junruanderson</a><br>
-				GitHub: <a href="github.com/andersonic">github.com/andersonic</a>
-			</p>
-		</div>
-		<div class="row section" id="experience" hidden>
-			<div class="experience-item">
-				<b>Pforzheimer Learning and Teaching Center</b>, Wellesley, MA <span style="float:right">January 2018-Present</span><br>
-				<i>Computer Science Department Tutor</i>
-				<ul>
-					<li>Answer questions on topics ranging from logic gates to C programming</li>
-					<li>Hold weekly review sessions for 12 students and bi-weekly drop in hours for up to 25 students/li>
-				</ul>
+		<div class="row" style="padding:1.5%">
+			<div class="col-md-4">
 			</div>
-			<div class="experience-item">
-				<b>Wellesley College Science Center</b>, Wellesley, MA <span style="float:right">June 2018-August 2018</span><br>
-				<i>Research Assistant</i>
-				<ul>
-					<li>Identify credibility signals from news websites that can be used to combat fake news</li>
-					<li>Use Selenium (web scraping) to automate the collection of a 455-sample dataset</li>
-					<li>Use OpenCV (computer vision), scikit-learn (machine learning), and Keras (deep learning) to create models that predict credibility of news sources with up to 90.8% accuracy
-					</li>
-				</ul>
+			<div class="col-md-8">
+				<a href="https://www.linkedin.com/in/junruanderson/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="icon"></a>
+				<a href="https://github.com/andersonic" target="_blank"><img src="images/github.svg" alt="GitHub" class="icon"></a>
 			</div>
-			<div class="experience-item">
-				<b>Wellesley College Library and Technology Services</b>, Wellesley, MA <span style="float:right">February 2018-March 2018</span><br>
-				<i>Software Deployment Assistant</i>
-				<ul>
-					<li>Built scripts for use in deploying the school-wide Microsoft Windows 10 image</li>
-					<li>Wrote and tested flags and batch files to silently install five applications</li>
-				</ul>
-			</div>
-			<div class="experience-item">
-				<b>Mathnasium of Redwood City</b>, Redwood City, CA <span style="float:right">April 2016-March 2017</span><br>
-				<i>Math Instructor</i>
-				<ul>
-					<li>Taught math lessons to groups of four students on topics ranging from number sense to calculus</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row section" id="projects" hidden>
-			<div class="" id="projectnav">
-				<button id="prev-button" onclick="previousProject()"><span></span></button>
-				<button id="next-button" onclick="nextProject()"><span></span></button>	
-			</div>	
-			<div class="project animated" id="bds">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>Brown Datathon: DiscoveryInsights</h1>
-						<p>
-							For this project, I worked with a data set provided by DiscoveryEngine, a non-profit that allows laypeople to rate academic papers along three metrics. Datathon participants were given the opportunity to decide what direction to take; I chose to investigate potential bias in paper ratings based on the author’s perceived gender. Given the DOI of the paper and the user ratings for each metric, I used the crossref api to find the author's name, and passed it to genderize.io to guess the author's gender. With this information, I was able to separate paper's and use SciPy to perform T-tests. Happily, I found no significant difference in the ratings of papers by male, female, and indeterminate (e.x., only first initial given) authors.<br><br>Congratulations to Jong and Vaibhav, with whom I tied for first place.
-						</p>
-					</div>
-				</div>	
-			</div>
-			<div class="project animated" id="pkmn">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>CS232-Artificial Intelligence: Pokémon AI</h1>
-						<h4><a href="https://github.com/andersonic/cs232-final" target="_blank">GitHub Repository</a></h4>
-						<p>
-							This project used Python to create a competitive Pokémon-playing agent. Pokémon is a stochastic game of asymmetrical knowledge, but most interestingly, has players choose actions at the same time (as opposed to chess or checkers, in which action choice is sequential). My team implemented three battling algorithms.<br><br>I implemented the random battling, whose performance was as poor as one would expect, and the expectimax algorithm, which peaked at ELO 1309 and had a GXE (expected long-term winrate) of 54.4% after 50 battles. I was also responsible for interfacing with the battle simulator, Pokémon Showdown, using the Selenium library.<br><br>Shoutouts to my partners, Dana and Hershel.
-						</p>
-					</div>		
-				</div>
-			</div>
-			<div class="project animated" id="tower">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>AP Computer Science:Tower Defense</h1>
-						<h4><a href="https://github.com/andersonic/towerdefense" target="_blank">GitHub Repository</a></h4>
-						<p>
-						A tower defense game written with Java, and my final project for AP Computer Science. The player builds defensive units to defend the player's tower and stop an invading force.<br><br>Shoutouts to Alice for being an awesome partner for this project.
-						</p>
-					</div>					
-				</div>	
-			</div>
-			<div class="project animated" id="humv">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>HackUMassV: CheckIn</h1>
-						<h4><a href="https://github.com/andersonic/CheckIn-HackUMassV" target="_blank">GitHub Repository</a></h4>
-						<p>
-						CheckIn allows the user to set automated daily check-ins with aging friends or relatives, and alerts the user if the check-in goes unanswered. CheckIn uses Python and Swift, and incorporates CMU Sphinx speech-to-text, Amazon Alexa text-to-speech, the DropBox SDK, and the JSON library for Python.<br><br>Shoutouts to my teammates David, Declan and Eric, all of whom were essential to our team's winning Best Hardware Hack.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="project animated" id="whack">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>WhackFall2017: Froodees</h1>
-						<h4><a href="https://github.com/andersonic/Froodie-WhackFall2017" target="_blank">GitHub Repository</a></h4>
-						<p>
-							This webapp, built with Flask, HTML, and CSS, connects would-be wasted food with people in need. I worked almost exclusively on the back end, handling food submissions and location-based requests for food.<br><br>Shoutouts to my collaborators and fellow Wellesley women Marinn, Rachel, and Sandra.
-						</p>
-					</div>
-				</div>	
-			</div>
-			<div class="project animated" id="cte">
-				<div class="project-contents">
-					<div class="project-text">
-						<h1>Hobby Project: Ciphered Text Editor</h1>
-						<h4><a href="https://github.com/andersonic/ciphered-text-editor" target="_blank">GitHub Repository</a></h4>
-						<p>
-							A text editor that provides support for enciphering and deciphering file contents according to a key/code. Implements a few vi-like keyboard commands. If quit through the supported keyboard command (as opposed to OS-level keyboard shortcuts such as Command-Q), contents will be enciphered before the file is saved if they are not enciphered when the user quits.<br><br>Credit and thanks to user Turk4n on Codecall for starter code related to the GUI. See tutorial here: <a href="http://forum.codecall.net/topic/49721-simple-text-editor/" target="_blank">http://forum.codecall.net/topic/49721-simple-text-editor/</a>
-						</p>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-		<div class="row section" id="skills" hidden>
-			<div class="col-md-6">
-				<div class="language">
-					<h3>Java</h3>
-					<i>Classes:</i> AP Computer Science<br>
-					<i>Familiar Libraries:</i> JFrame<br>
-					<i>Projects:</i> Tower Defense, Ciphered Text Editor<br>
-				</div>
-				<div class="language">
-					<h3>HTML/CSS/JavaScript</h3>
-					<i>Classes:</i> None<br>
-					<i>Familiar Libraries:</i> Animate, Bootstrap, JQuery<br>
-					<i>Projects:</i> This<br>
-				</div>	
-			</div>
-			<div class="col-md-6">
-				<div class="language">
-					<h3>Python</h3>
-					<i>Classes:</i> CS232-Artificial Intelligence<br>
-					<i>Familiar Libraries:</i> Flask, Selenium, OpenCV, scikit-learn, Keras<br>
-					<i>Projects:</i> Pokémon Playing Agent, CheckIn, Froodees<br>
-				</div>
-				<div class="language">
-					<h3>C</h3>
-					<i>Classes:</i> CS240-Introduction to Computer Systems<br>
-				</div>
-			</div>
-		</div>
-		<div class="row section" id="awards" hidden>
-		Brown Datathon - First Place (2018)<br>
-		HackUMassV - Best Hardware Hack (2017)<br>
-		National Merit Scholar (2017)<br>
-		Presidential Scholar Candidate (2017)<br>
-		National AP Scholar (2017)<br>
-	</div>
-		
-		<div class="section" id="favorites" hidden>
-			<h2>A Few of My Favorite Things</h3>
-			<div class="favorite" id="books">
-				<h3>Books</h3>
-				<div class="row">
-					<div class="col-md-1 imgcol">
-						<img class="cover-image" src="images/themartian.jpg">
-					</div>
-					<div class="col-md-11">
-						<h5><i>The Martian</i> by Andy Weir</h5>
-						<p>It's scientifically accurate. It's believable. It's funny. Also, it's written by a former programmer.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-1 imgcol">
-						<img class="cover-image" src="images/prisoner.jpg">
-					</div>
-					<div class="col-md-11">
-						<h5><i>The Prisoner in His Palace</i> by Will Bardenwerper</h5>
-						<p>About the last months of Saddam Hussein's life, and the twelve American men who guarded him during that time. This book stares unflinchingly at the complexity of human nature and the horrors of war as the American guards befriend the Iraqi dictator despite knowing his crimes, and must then deliver him to the gallows.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="favorite" id="musical">
-				<h3>Musical</h3>
-				<div class="row">
-					<div class="col-md-1 imgcol">
-						<img class="cover-image" src="images/wicked.jpg">
-					</div>
-					<div class="col-md-11"><h5><i>Wicked</i></h5>
-						<p>With inspiring characters, great music and a touching story (based of an enjoyable book), <i>Wicked</i> is without doubt my all-time favorite musical.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="favorite" id="comic-books">
-				<h3>Comic Book Series</h3>
-				<div class="row">
-					<div class="col-md-1 imgcol">
-						<img class="cover-image" src="images/iim.jpg">
-					</div>
-					<div class="col-md-11">
-						<h5><i>Infamous Iron Man (2016)</i> created by Brian Michael Bendis and Alex Maleev</h5>
-						<p>
-						From Darth Vader to Loki to Severus Snape, redemption stories usually end in the redeemed character's swift death. Starting in <i>Invincible Iron Man (2015)</i> and continuing in his own series, <i>Infamous Iron Man</i>, Doctor Doom tries to become a hero&mdash;and has to live with it.
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-1 imgcol">
-						<img class="cover-image" src="images/vader.jpg">
-					</div>
-					<div class="col-md-11">
-						<h5><i>Vader (2015)</i> created by Kieron Gillen, Salvador Larroca and Adi Granov</h5>
-						<p>
-							Speaking of Darth Vader&hellip;have you ever wondered how he went from hurtling through space in a TIE fighter to commanding a Super Star Destroyer? This series answers that question, exploring Darth Vader's exploits between <i>A New Hope</i> and <i>The Empire Strikes Back</i>.
-						</p>
-					</div>
-				</div>
-			</div>		
 		</div>
 		
+		<div>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-5">
+					<h4>Experience</h4>
+					<hr>
+				</div>
+			
+				<div class="col-md-9 col-sm-8 col-xs-7">
+					<h4><br></h4>
+					<hr>
+				</div>
+			</div>
+			
+			<div class="row experience">
+				<div class="col-md-3 col-sm-4 col-xs-5">
+				</div>
+				<div class="col-md-9 col-sm-8 col-xs-7">
+					<h5>Software Engineering Intern, Facebook</h5>
+					<h6>Summer 2020</h6>
+					<p></p>
+				</div>
+			</div>
+			
+			<div class="row experience">
+				<div class="col-md-3 col-sm-4 col-xs-5">
+				</div>
+				<div class="col-md-9 col-sm-8 col-xs-7">
+					<h5>Summer Analyst, Goldman Sachs</h5>
+					<h6>Summer 2019</h6>
+					<p>Reduced time to onboard new risk model from 1 day to 15 minutes using Java and ElasticSearch. Performed first comprehensive analysis of latency of security pricing model, presenting data visualizations to team leadership. Implemented live monitoring of aforementioned latency using proprietary programming language and database system. </p>
+				</div>
+			</div>
+			
+			<div class="row experience">
+				<div class="col-md-3 col-sm-4 col-xs-5">
+				</div>
+				<div class="col-md-9 col-sm-8 col-xs-7">
+					<h5>Research Assistant, Wellesley College</h5>
+					<h6>Summer 2018</h6>
+					<p>Automated data collection on Google search result pages for 200 queries twice daily using web scraping with Python. Classified news sources as credible or non-credible with 90.8% accuracy using machine learning with scikit-learn.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<p><b> 2020 Copyrights - </b> All Rights Reserved</p>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<p style="text-align:right"><b> Jun Ru Anderson </b></p>
+				</div>
+			</div>
+		</div>
 		
-		<div class="row animated" id="bottom">
-		<div class="border-line" id="border-line-bottom">
-	</div>
 	</div>
 </body>
-</html>
+</html> 
