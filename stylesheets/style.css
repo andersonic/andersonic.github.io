@@ -2,21 +2,53 @@ body{
 	color: #838687;
 	font-family: 'Roboto', sans-serif;
 }
-
-.fit-image {
-width: 75%;
+.navbutton {
+	padding:1%;
+	text-align:center;
 }
 
-.icon{
-	width:40px;
-	height:40px;
-	margin-right:1.5%;
+.navbutton:hover {
+	background-color:#838687;
+	color:white;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+a:link {
+  text-decoration: none;
+  color: #838687;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #838687;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #838687;
+}
+
+a:active {
+  text-decoration: none;
+  color: #838687;
+}
+
+#intro {
+	margin-top:3%;
+	margin-bottom:3%;
+	text-align:center;
+}
+
+#profilephoto {
+	border-radius:50%;
+	width:60%;
+}
+
+#intro p{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:justify; 
+	padding-right:10%;
 }
 
 .colored {
@@ -26,4 +58,59 @@ width: 75%;
 
 .experience {
 	margin-bottom:1%;
+}
+
+.icon{
+	width:40px;
+	height:40px;
+	margin-right:1.5%;
+}
+
+.quotation{
+	margin-top:1%;
+	text-align:center;
+}
+
+.quote{
+	font-size:xx-large;
+	font-style:italic;
+}
+
+.project{
+	padding-left:3%;
+	padding-right:3%;
+	margin-top:1.5%;
+	margin-bottom:1.5%;
+}
+
+.wrapper{
+	position:relative;
+}
+
+.project-text{
+	padding:2%;
+	background-color:rgba(211,211,211,0.9);
+	position:absolute;
+	height:100%;
+	color:white;
+	opacity:0;
+}
+
+.project-text:hover{
+	opacity:1;
+}
+
+.project-text:active{
+	opacity:1;
+}
+
+.project img{
+	border-style:solid;
+	border-color: lightgrey;
+	width: 100%;
+}
+
+.project-title{
+	width:100%;
+	background-color:lightgray;
 }
